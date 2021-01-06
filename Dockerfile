@@ -8,4 +8,4 @@ WORKDIR /icescrum
 COPY entrypoint.sh .
 ADD https://www.icescrum.com/downloads/v7/icescrum.jar .
 EXPOSE 8080
-CMD ./entrypoint.sh
+CMD ["./entrypoint.sh"]
