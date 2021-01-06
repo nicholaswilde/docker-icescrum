@@ -1,5 +1,7 @@
 # Docker iceScrum
 
+A multi architecture image of [iceScrum](https://www.icescrum.com/).
+
 iceScrum is an open-minded and expert agile project management tool based on the Scrum methodology: https://www.icescrum.com/features/.
 
 Tags:
