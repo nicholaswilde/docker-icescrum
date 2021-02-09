@@ -195,7 +195,7 @@ __Start MySQL and iceScrum on a new `mynet` Docker network on URL http://docker-
 ```console
 docker network create --driver bridge mynet
 docker run --name mysql    -v ~/docker-is/mysql:/var/lib/mysql --net=mynet -e MYSQL_DATABASE=icescrum -e MYSQL_ROOT_PASSWORD=myPass -d mysql:5.7         --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
-docker run --name icescrum -v ~/docker-is/home:/root           --net=mynet -p 8080:8080                                                icescrum/icescrum
+docker run --name icescrum -v ~/docker-is/home:/root           --net=mynet -p 8080:8080                                                nicholaswilde/icescrum
 ```
 
 __Start iceScrum with H2 on URL http://docker-host:8090/icescrum__
