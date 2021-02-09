@@ -200,12 +200,12 @@ docker run --name icescrum -v ~/docker-is/home:/root           --net=mynet -p 80
 
 __Start iceScrum with H2 on URL http://docker-host:8090/icescrum__
 ```console
-docker run --name icescrum -v ~/docker-is/home:/root -p 8090:8080 icescrum/icescrum
+docker run --name icescrum -v ~/docker-is/home:/root -p 8090:8080 nicholaswilde/icescrum
 ```
 
 __Start iceScrum with H2 on URL http://docker-host__
 ```console
-docker run --name icescrum -v ~/docker-is/home:/root -p 80:8080 -e ICESCRUM_CONTEXT=/ icescrum/icescrum
+docker run --name icescrum -v ~/docker-is/home:/root -p 80:8080 -e ICESCRUM_CONTEXT=/ nicholaswilde/icescrum
 ```
 
 ### docker-compose
