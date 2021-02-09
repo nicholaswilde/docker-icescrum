@@ -80,7 +80,7 @@ services:
       - MYSQL_ROOT_PASSWORD=myPass
     command: --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
   icescrum:
-    image: icescrum/icescrum
+    image: nicholaswilde/icescrum
     volumes:
       - /mycomputer/is/home:/root
     ports:
@@ -208,6 +208,33 @@ __Start iceScrum with H2 on URL http://docker-host__
 docker run --name icescrum -v ~/docker-is/home:/root -p 80:8080 -e ICESCRUM_CONTEXT=/ icescrum/icescrum
 ```
 
-## Information
+### docker-compose
 
-The iceScrum Docker image is maintained by the behind iceScrum: __Kagilum__. More information on our website: https://www.icescrum.com/.
+See [docker-compose.yaml](./docker-compose.yaml).
+
+## Development
+
+See [Wiki](https://github.com/nicholaswilde/docker-template/wiki/Development).
+
+## Troubleshooting
+
+See [Wiki](https://github.com/nicholaswilde/docker-template/wiki/Troubleshooting).
+
+## Pre-commit hook
+
+If you want to automatically generate `README.md` files with a pre-commit hook, make sure you
+[install the pre-commit binary](https://pre-commit.com/#install), and add a [.pre-commit-config.yaml file](./.pre-commit-config.yaml)
+to your project. Then run:
+
+```bash
+pre-commit install
+pre-commit install-hooks
+```
+Currently, this only works on `amd64` systems.
+
+## License
+
+[Apache 2.0 License](./LICENSE)
+
+## Author
+This project was started in 2021 by [Nicholas Wilde](https://github.com/nicholaswilde/).
