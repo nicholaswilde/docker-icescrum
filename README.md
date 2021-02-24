@@ -1,11 +1,18 @@
 # Docker iceScrum
 
+[![Docker Image Version (latest by date)](https://img.shields.io/docker/v/nicholaswilde/icescrum)](https://hub.docker.com/r/nicholaswilde/icescrum)
+[![Docker Pulls](https://img.shields.io/docker/pulls/nicholaswilde/icescrum)](https://hub.docker.com/r/nicholaswilde/icescrum)
+[![GitHub](https://img.shields.io/github/license/nicholaswilde/docker-icescrum)](./LICENSE)
+[![ci](https://github.com/nicholaswilde/docker-icescrum/workflows/ci/badge.svg)](https://github.com/nicholaswilde/docker-icescrum/actions?query=workflow%3Aci)
+[![lint](https://github.com/nicholaswilde/docker-icescrum/workflows/lint/badge.svg?branch=main)](https://github.com/nicholaswilde/docker-icescrum/actions?query=workflow%3Alint)
+[![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
+
 A multi architecture image of [iceScrum](https://www.icescrum.com/).
 
 iceScrum is an open-minded and expert agile project management tool based on the Scrum methodology: https://www.icescrum.com/features/.
 
 Tags:
-- iceScrum 7.51: `latest`
+- iceScrum 7.52: `latest`
 - iceScrum R6#14.14: `R6` (__deprecated__, documentation: https://github.com/icescrum/iceScrum-docker/blob/R6/icescrum/README.md)
 
 The `R6` version of iceScrum is deprecated, use it only to prepare an existing installation for the migration to iceScrum v7. To migrate, follow this documentation: https://www.icescrum.com/documentation/migration-standalone/.
