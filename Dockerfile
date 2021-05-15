@@ -7,6 +7,7 @@ ENV JAVA_OPTS -Xmx1024m -Dicescrum.log.dir=/root/logs/ -Dicescrum.environment=do
 WORKDIR /icescrum
 COPY entrypoint.sh .
 ADD https://www.icescrum.com/downloads/v7/icescrum.jar .
+SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 RUN  echo "${CHECKSUM}  icescrum.jar" | sha256sum -c
 EXPOSE 8080
 CMD ["./entrypoint.sh"]
