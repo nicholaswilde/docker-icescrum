@@ -1,0 +1,20 @@
+---
+version: '3'
+
+env:
+  GOSS_SLEEP: 60
+
+tasks:
+  run:
+    desc: Run dgoss
+    cmds:
+      - "{{ .DGOSS_RUN }} {{ .TAG_VERSION }}"
+    preconditions:
+      - docker images -q {{ .TAG_VERSION }} 2> /dev/null
+
+  edit:
+    desc: Edit dgoss
+    cmds:
+      - "{{ .DGOSS_EDIT }} {{ .TAG_VERSION }}"
+    preconditions:
+      - docker images -q {{ .TAG_VERSION }} 2> /dev/null

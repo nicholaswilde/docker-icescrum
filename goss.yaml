@@ -1,0 +1,12 @@
+---
+port:
+  tcp:8080:
+    listening: true
+
+process:
+  java:
+    running: true
+
+http:
+  http://localhost:8080/icescrum/setup/#/:
+    status: 200
